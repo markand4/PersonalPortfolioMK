@@ -28,7 +28,7 @@ export default function Contact() {
         setSubmitted(true)
         setName('')
         setEmail('')
-        setBody('')
+        setMessage('')
       }
     })
   }
