@@ -145,12 +145,6 @@ export default function Navbar() {
           About
         </Link>
         <Link
-          href="/projects"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          Projects
-        </Link>
-        <Link
           href="/resume"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
