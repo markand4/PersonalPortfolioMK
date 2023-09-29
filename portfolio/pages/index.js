@@ -1,16 +1,16 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import ContainerBlock from "../components/ContainerBlock";
-import Hero from "../components/Hero";
+import AboutMe from "../components/AboutMe";
 
 
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Manu Arora - Developer, Writer, Creator"
-      description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+      title="Mark Kurpiel's portfolio"
+      description="My site to display who I am and what I do"
     >
-      <Hero />
+      <AboutMe />
     </ContainerBlock>
   );
 }
