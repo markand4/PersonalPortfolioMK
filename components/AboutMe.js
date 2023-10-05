@@ -14,7 +14,7 @@ export default function AboutMe() {
             alt="Avatar of me"
           />
           <h1 className="text-gray-300 pt-6 font-semibold text-2xl">
-              Hi, welcome to my site, I'm Mark Kurpiel a hard working software engineer with a passion for delivering amazing products to my clients. My current role involves automating many processes using python and jenkins. I do pride myself in being able to adapt and learn tech stacks, something I've been able to do in my career and want to continue doing. 
+              Hi, welcome to my site, I'm Mark Kurpiel a hard working software engineer with a passion for delivering amazing products to my clients. My current role involves automating many processes using python and jenkins. I pride myself in being able to adapt and learn various tech stacks, I spend my free time focused on learning new skills and staying relevant.
           </h1>
           <section
             className="mb-28 pt-10 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
