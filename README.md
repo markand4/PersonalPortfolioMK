@@ -12,15 +12,13 @@ Live Site: https://personal-portfolio-markkurpiel.vercel.app/
 
 
 
-## Setup
+## Setup Locally 
 
-Get the code by either cloning this repository using git
+Get the code by cloning this repository using git
 
 ```
-git clone https://github.com/sanity-io/example-frontend-next-js.git
+git clone https://github.com/markand4/PersonalPortfolioMK
 ```
-
-... or [downloading source code](https://github.com/sanity-io/example-frontend-next-js/archive/master.zip) code as a zip archive.
 
 Once downloaded, open the terminal in the project directory, and install dependencies with:
 
@@ -28,25 +26,16 @@ Once downloaded, open the terminal in the project directory, and install depende
 npm install
 ```
 
-If you're running your own Sanity project with the example movie dataset, go to `lib/sanity.js` and change the following lines:
-
-```
-  projectId: 'YOUR_PROJECT_ID',
-  dataset: 'NAME_OF_YOUR_DATASET',
-```
-
-You can locate the ID of your project in the header of the [management page for your project](https://manage.sanity.io/).
-
-You also need to enable `localhost:3000` in your CORS Origins settings! Either through the [management page](https://manage.sanity.io/) under `settings` or by running the below in the project folder you set up with `sanity init`:
-
-```
-sanity cors add http://localhost:3000
-```
-
-Then start the example app with:
+Then run it locally using the command:
 
 ```
 npm run dev
 ```
 
-The app should now be up and running at http://localhost:3000 🚀
+The website will now be up at http://localhost:3000 🚀
+
+##Guides and Templates used
+
+1.[Free code camp portfolio](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/)
+2.[Free code camp contact page](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
+
