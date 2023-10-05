@@ -36,6 +36,6 @@ The website will now be up at http://localhost:3000 🚀
 
 ##Guides and Templates used
 
-1.[Free code camp portfolio](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/)
-2.[Free code camp contact page](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
+1. [Free code camp portfolio](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/)
+2. [Free code camp contact page](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
 
