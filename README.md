@@ -5,12 +5,10 @@ Live Site: https://personal-portfolio-markkurpiel.vercel.app/
 
 ## Tools Used 
 
-*Next.js
-*Vercel
-*Tailwindcss
-*HTML5
-*[SendGrid](https://sendgrid.com/)
-*Javascript
+1. [Next.js- Framework](https://nextjs.org/) 
+2. [Vercel- Deployment](https://vercel.com/dashboard)
+3. [Tailwindcss-Styling](https://tailwindcss.com/)
+5. [SendGrid- Api for email](https://sendgrid.com/)
 
 
 
