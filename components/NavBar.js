@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import userData from "../constants/data";
+import myData from "../constants/data";
 
 export default function Navbar() {
   const router = useRouter();
@@ -19,11 +19,11 @@ export default function Navbar() {
       <div className="flex  md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
-            <h1 className="font-semibold text-xl dark:text-gray-100">
-              {userData.name}
+            <h1 className="font-semibold text-xl">
+              {myData.name}
             </h1>
-            <p className="text-base font-light text-gray-500 dark:text-gray-300">
-              {userData.designation}
+            <p className="text-base font-light text-gray-500">
+              {myData.designation}
             </p>
           </Link>
         </div>
@@ -33,8 +33,8 @@ export default function Navbar() {
             href="/"
             className={`text-base  ${
               router.asPath === "/"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold "
+                : "text-gray-600 font-normal "
             }`}
           >
             About{" "}
@@ -58,8 +58,8 @@ export default function Navbar() {
             href="/resume"
             className={`text-base  ${
               router.asPath === "/resume"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold "
+                : "text-gray-600 font-normal "
             }`}
           >
             Resume{" "}
@@ -83,8 +83,8 @@ export default function Navbar() {
             href="/contact"
             className={`text-base  ${
               router.asPath === "/contact"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold"
+                : "text-gray-600 font-normal "
             }`}
           >
             Contact
@@ -107,7 +107,7 @@ export default function Navbar() {
         </div>
 
         <div className="space-x-4 flex flex-row items-center">
-          <a href={userData.socialLinks.github} x>
+          <a href={myData.socialLinks.github} x>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -120,8 +120,8 @@ export default function Navbar() {
             </svg>
           </a>
           <a
-            href={userData.socialLinks.linkedin}
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            href={myData.socialLinks.linkedin}
+            className="text-base font-normal text-gray-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,19 +140,19 @@ export default function Navbar() {
       <div className="space-x-8 block md:hidden mt-4">
         <Link
           href="/"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
+          className="text-base font-normal text-gray-600 "
         >
           About
         </Link>
         <Link
           href="/resume"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
+          className="text-base font-normal text-gray-600"
         >
           Resume
         </Link>
         <Link
           href="/contact"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
+          className="text-base font-normal text-gray-600"
         >
           Contact
         </Link>

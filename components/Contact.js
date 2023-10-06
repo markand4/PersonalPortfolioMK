@@ -1,33 +1,31 @@
-import userData from "../constants/data";
+import myData from "../constants/data";myData
 import React, { useEffect, useState } from "react";
 
-export default function ContactUs() {
-// States for contact form fields
- const [fullname, setFullname] = useState("");
+export default function ContactMe() {
+// Contact form vars 
+ const [name, setname] = useState("");
  const [email, setEmail] = useState("");
  const [subject, setSubject] = useState("");
  const [message, setMessage] = useState("");
 
- //   Form validation state
+ //Error var 
  const [errors, setErrors] = useState({});
 
  //   Setting button text on form submission
  const [buttonText, setButtonText] = useState("Send");
 
- // Setting success or failure messages states
- const [showSuccessMessage, setShowSuccessMessage] = useState(false);
- const [showFailureMessage, setShowFailureMessage] = useState(false);
+ //send message for send button 
  const [sendMessage, setSendMessage] = useState("Send Message");
 
 
 
- // Validation check method
+ // Check for form validation if false won't let user sumbmit 
  const handleValidation = () => {
    let tempErrors = {};
    let isValid = true;
 
-   if (fullname.length <= 0) {
-     tempErrors["fullname"] = true;
+   if (name.length <= 0) {
+     tempErrors["name"] = true;
      isValid = false;
    }
    if (email.length <= 0 && email.includes('@')) {
@@ -48,20 +46,19 @@ export default function ContactUs() {
    return isValid;
  };
 
- //   Handling form submit
-
+ //Sends email to me using field entrys
  const handleSubmit = async (e) => {
    e.preventDefault();
 
    let isValidForm = handleValidation();
 
 
-
+   //checks validation if good sends fetch request to sendemail.js api 
    if (isValidForm) {
      const res = await fetch("/api/sendEmail", {
        body: JSON.stringify({
          email: email,
-         fullname: fullname,
+         name: name,
          subject: subject,
          message: message,
        }),
@@ -76,8 +73,6 @@ export default function ContactUs() {
      const { error } = await res.json();
      if (error) {
        console.log(error);
-       setShowSuccessMessage(false);
-       setShowFailureMessage(true);
        setTimeout(() => {
         setSendMessage("Failed to Send");
       }, 2000);
@@ -87,7 +82,7 @@ export default function ContactUs() {
       setSendMessage("Sent");
     }, 2000);
    }
-   console.log(fullname, email, subject, message);
+   console.log(name, email, subject, message);
  };
   return (
     <section>
@@ -118,7 +113,7 @@ export default function ContactUs() {
                   />
                 </svg>
                 <p className="text-gray-50 font-light text-sm">
-                  {userData.phone}
+                  {myData.phone}
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#202A44] hover:border hover:border-blue-500 p-4">
@@ -133,7 +128,7 @@ export default function ContactUs() {
                   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
                 </svg>
                 <p className="text-gray-50 font-light text-sm">
-                  {userData.email}
+                  {myData.email}
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#202A44] hover:border hover:border-blue-500 p-4">
@@ -148,7 +143,7 @@ export default function ContactUs() {
                   <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z" />
                 </svg>
                 <p className="text-gray-50 font-light text-sm">
-                  {userData.address}
+                  {myData.address}
                 </p>
               </div>
             </div>
@@ -163,7 +158,7 @@ export default function ContactUs() {
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
               onChange={(e) => {
-                setFullname(e.target.value);
+                setname(e.target.value);
               }}
             />
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
