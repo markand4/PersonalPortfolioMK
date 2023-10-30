@@ -1,7 +1,12 @@
-# Mark Kurpiel's Personal Portfolio Web Application 
+
+
+# Mark Kurpiel's Personal Portfolio Web Application  
+
+<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
+![GitHub contributors](https://img.shields.io/github/contributors/scottydocs/README-template.md)
 
 Live Site: https://personal-portfolio-markkurpiel.vercel.app/
-
 
 ## Tools Used 
 
@@ -38,4 +43,5 @@ The website will now be up at http://localhost:3000 🚀
 
 1. [Free code camp portfolio](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/)
 2. [Free code camp contact page](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
+3. 
 
