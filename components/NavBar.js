@@ -176,7 +176,7 @@ export default function Navbar() {
           Resume
         </Link>
         <Link
-          href="/resume"
+          href="/projects"
           className="text-base font-normal text-gray-600"
         >
           Projects
