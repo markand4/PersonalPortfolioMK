@@ -22,6 +22,16 @@ const userData = {
       github: "https://github.com/markand4/",
       linkedin: "https://www.linkedin.com/in/mark-kurpiel/"
     },
+    projects:[
+      {
+        title: "Python DJ Mag Spotify Playlist Generator",
+        repoLink: "https://github.com/markand4/Python-DJ-Mag-Spotify-Playlist-Generator#python-dj-mag-spotify-playlist-generator",
+        description:
+          "Python script that allows user to login to their spotify and create a spotify playlist of DJ Mag's top 100 artists of a given year by user",
+        backgroundImage: "./PythonSpotify.PNG",
+      }
+        
+    ]
   };
   
   export default userData;

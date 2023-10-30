@@ -21,6 +21,7 @@ export default function ContactMe() {
 
  // Check for form validation if false won't let user sumbmit 
  const handleValidation = () => {
+  e.preventDefault();
    let tempErrors = {};
    let isValid = true;
 
