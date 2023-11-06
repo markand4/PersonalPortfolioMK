@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function Projects() {
     return (
-        <section className="bg-white">
+        <div className="relative z-10 rounded-md shadow-md bg-[#202A44] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20">
             <div className="max-w-5xl mx-auto h-42 bg-white">
                 <h1 className=" text-4xl md:text-8xl font-bold pb-10 text-center md:text-left">
                 Projects
@@ -36,6 +36,6 @@ export default function Projects() {
                 ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }

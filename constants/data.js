@@ -29,6 +29,13 @@ const userData = {
         description:
           "Python script that allows user to login to their spotify and create a spotify playlist of DJ Mag's top 100 artists of a given year by user input",
         backgroundImage: "./PythonSpotify.PNG",
+      },
+      {
+        title: "Next.js DJ Mag Spotify Playlist Generator",
+        repoLink: "https://github.com/markand4/SpotifyPlaylistGenNextjs",
+        description:
+          "Next.js webapplication that allows user to login to their spotify and create a spotify playlist of DJ Mag's top 100 artists of a given year by user",
+        backgroundImage: "./spotifyNextjs.png",
       }
         
     ]
